@@ -25,6 +25,17 @@ if st.sidebar.button("Exécuter la modélisation"):
     st.write("Résultats de la modélisation :")
     st.write(results)
 
+# Bouton pour exécuter la classification avec l'ID client sélectionné
+if st.sidebar.button("Afficher infos client"):
+    # Appeler votre API Flask avec l'ID client sélectionné pour effectuer la modélisation
+    url = f"http://127.0.0.1:5001/api/v1/data/id_clients?SK_ID_CURR={selected_id}"
+    response = requests.get(url)
+    results = response.json()
+
+    # Afficher les résultats de la modélisation
+    st.write("Infos client :")
+    st.write(results)
+
 # Slider pour choisir le nombre de features à afficher
 nb_features = st.sidebar.slider("Nombre de features",min_value=1,max_value=21,value=10)
 
