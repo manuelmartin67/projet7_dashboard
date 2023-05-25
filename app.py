@@ -21,9 +21,10 @@ selected_id = st.selectbox("Choisir l'ID client", id_values)
 
 # Afficher les résultats de la modélisation
 #st.header(results)
-resultat = "en attente"
+
+#resultat = "en attente"
 # premier header
-head = st.header(resultat)
+#head = st.header(resultat)
 
 # Bouton pour exécuter la classification avec l'ID client sélectionné
 bouton_modelisation = st.sidebar.button("Exécuter la modélisation")
@@ -36,7 +37,7 @@ if bouton_modelisation:
     # Afficher les résultats de la modélisation
     resultat = results
 
-head.header(resultat)
+st.header(resultat)
 
 
 
