@@ -14,8 +14,8 @@ id_values = [client["SK_ID_CURR"] for client in id_clients]
 # Afficher la selectbox pour choisir l'ID client
 selected_id = st.selectbox("Choisir l'ID client", id_values)
 
-header = "En attente de modélisation"
-result = st.header(header)
+
+result = st.header("En attente de modélisation")
 
 # Bouton pour exécuter la classification avec l'ID client sélectionné
 bouton_modelisation = st.sidebar.button("Exécuter la modélisation")
@@ -26,14 +26,13 @@ if bouton_modelisation:
     results = response.json()
 
     # Afficher les résultats de la modélisation
-    header = results
+    result.header(results)
 
-result.header(header)
+
 
 # Bouton pour afficher les infos de l'ID client sélectionné
 if st.sidebar.button("Afficher infos client"):
     # Appeler votre API Flask avec l'ID client sélectionné pour effectuer la modélisation
-    bouton_modelisation = True
     url = f"https://projet7-flask.herokuapp.com/api/v1/data/id_clients?SK_ID_CURR={selected_id}"
     response = requests.get(url)
     results = response.json()
