@@ -14,8 +14,8 @@ id_values = [client["SK_ID_CURR"] for client in id_clients]
 # Afficher la selectbox pour choisir l'ID client
 selected_id = st.selectbox("Choisir l'ID client", id_values)
 
-result = st.empty()
-result.header("En attente de modélisation")
+header = "En attente de modélisation"
+result = st.header(header)
 
 # Bouton pour exécuter la classification avec l'ID client sélectionné
 if st.sidebar.button("Exécuter la modélisation"):
@@ -25,7 +25,9 @@ if st.sidebar.button("Exécuter la modélisation"):
     results = response.json()
 
     # Afficher les résultats de la modélisation
-    result.header(results)
+    header = results
+
+result.header(header)
 
 # Bouton pour afficher les infos de l'ID client sélectionné
 if st.sidebar.button("Afficher infos client"):
