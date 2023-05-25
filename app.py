@@ -24,17 +24,16 @@ if st.sidebar.button("Exécuter la modélisation"):
     results = response.json()
 
     # Afficher les résultats de la modélisation
-    st.write("Résultats de la modélisation :")
-    st.write(results)
+    result = st.header(results)
 
-# Bouton pour exécuter la classification avec l'ID client sélectionné
+# Bouton pour afficher les infos de l'ID client sélectionné
 if st.sidebar.button("Afficher infos client"):
     # Appeler votre API Flask avec l'ID client sélectionné pour effectuer la modélisation
     url = f"https://projet7-flask.herokuapp.com/api/v1/data/id_clients?SK_ID_CURR={selected_id}"
     response = requests.get(url)
     results = response.json()
 
-    # Afficher les résultats de la modélisation
+    # Afficher les infos
     st.write("Infos client :")
     st.write(results)
 
