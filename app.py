@@ -33,6 +33,7 @@ result.header(header)
 # Bouton pour afficher les infos de l'ID client sélectionné
 if st.sidebar.button("Afficher infos client"):
     # Appeler votre API Flask avec l'ID client sélectionné pour effectuer la modélisation
+    bouton_modelisation = True
     url = f"https://projet7-flask.herokuapp.com/api/v1/data/id_clients?SK_ID_CURR={selected_id}"
     response = requests.get(url)
     results = response.json()
