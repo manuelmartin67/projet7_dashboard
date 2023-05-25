@@ -24,7 +24,7 @@ if st.sidebar.button("Exécuter la modélisation"):
     results = response.json()
 
     # Afficher les résultats de la modélisation
-    result = st.header(results)
+    result.header(results)
 
 # Bouton pour afficher les infos de l'ID client sélectionné
 if st.sidebar.button("Afficher infos client"):
