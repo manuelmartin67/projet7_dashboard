@@ -36,8 +36,7 @@ if bouton_modelisation:
 
     # Afficher les résultats de la modélisation
     resultat = results
-
-st.header(resultat)
+    st.header(resultat)
 
 
 
