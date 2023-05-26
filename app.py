@@ -51,8 +51,13 @@ if st.sidebar.button("Afficher infos client"):
     st.write("Infos client :")
     st.write(results)
 
+
+st.sidebar.divider()
+
+
 # Slider pour choisir le nombre de features à afficher
 nb_features = st.sidebar.slider("Nombre de features",min_value=1,max_value=21,value=10)
+
 
 
 # Bouton pour le graphe d'importance locale
