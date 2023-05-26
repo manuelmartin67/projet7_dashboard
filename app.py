@@ -21,9 +21,6 @@ selected_id = st.selectbox("Choisir l'ID client", id_values)
 if "message" not in st.session_state :
     st.session_state.message = "En attente de modélisation"
 
-# Afficher les résultats de la modélisation
-st.header(st.session_state.message)
-
 #resultat = "en attente"
 # premier header
 #head = st.header(resultat)
@@ -39,6 +36,8 @@ if st.sidebar.button("Exécuter la modélisation"):
     # Afficher les résultats de la modélisation
     st.session_state.message = results
 
+# Afficher les résultats de la modélisation
+st.header(st.session_state.message)
 
 # Bouton pour afficher les infos de l'ID client sélectionné
 if st.sidebar.button("Afficher infos client"):
