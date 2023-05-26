@@ -38,6 +38,7 @@ if st.sidebar.button("Exécuter la modélisation"):
 
 # Afficher les résultats de la modélisation
 st.header(st.session_state.message)
+st.divider()
 
 # Bouton pour afficher les infos de l'ID client sélectionné
 if st.sidebar.button("Afficher infos client"):
