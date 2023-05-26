@@ -11,8 +11,11 @@ id_clients = response.json()
 # Extraire les valeurs des ID clients
 id_values = [client["SK_ID_CURR"] for client in id_clients]
 
+def on_selectbox_change():
+    st.session_state.message = "En attente de modélisation"
+
 # Afficher la selectbox pour choisir l'ID client
-selected_id = st.selectbox("Choisir l'ID client", id_values)
+selected_id = st.selectbox("Choisir l'ID client", id_values, on_change=on_selectbox_change)
 
 
 #url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients?SK_ID_CURR={selected_id}"
