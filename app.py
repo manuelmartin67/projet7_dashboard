@@ -35,9 +35,9 @@ if st.sidebar.button("Exécuter la modélisation"):
 
     # Afficher les résultats de la modélisation
     if results == "Acceptation" :
-        st.session_state.message = ':green[results]'
+        st.session_state.message = ':green['+results+']'
     else :
-        st.session_state.message = ':red[results]'
+        st.session_state.message = ':red['+results+']'
 
 # Afficher les résultats de la modélisation
 st.header(st.session_state.message)
