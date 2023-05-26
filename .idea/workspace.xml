@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93354b52-ca19-46f4-bba0-1c20632f237b" name="Changes" comment="ajout zone de modélisation fixe">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="93354b52-ca19-46f4-bba0-1c20632f237b" name="Changes" comment="ajout zone de modélisation fixe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +205,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685102752079</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ajout zone de modélisation fixe">
+      <created>1685102862750</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685102862750</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ajout zone de modélisation fixe">
+      <created>1685103046696</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1685103046696</updated>
+    </task>
+    <task id="LOCAL-00026" summary="ajout zone de modélisation fixe">
+      <created>1685103408533</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1685103408533</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
