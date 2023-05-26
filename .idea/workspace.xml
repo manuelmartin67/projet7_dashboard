@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93354b52-ca19-46f4-bba0-1c20632f237b" name="Changes" comment="ajout zone de modélisation fixe" />
+    <list default="true" id="93354b52-ca19-46f4-bba0-1c20632f237b" name="Changes" comment="ajout zone de modélisation fixe">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685002432301</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="ajout zone de modélisation fixe">
+      <created>1685002627517</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1685002627517</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ajout zone de modélisation fixe">
+      <created>1685002897103</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685002897103</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

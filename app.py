@@ -15,12 +15,14 @@ id_values = [client["SK_ID_CURR"] for client in id_clients]
 selected_id = st.selectbox("Choisir l'ID client", id_values)
 
 
-url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients?SK_ID_CURR={selected_id}"
-response = requests.get(url)
-results = response.json()
+#url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients?SK_ID_CURR={selected_id}"
+#response = requests.get(url)
+#results = response.json()
+if "message" not in st.session_state :
+    st.session_state.message = "En attente de modélisation"
 
 # Afficher les résultats de la modélisation
-st.header(results)
+st.header(st.session_state.message)
 
 #resultat = "en attente"
 # premier header
@@ -28,16 +30,14 @@ st.header(results)
 
 # Bouton pour exécuter la classification avec l'ID client sélectionné
 #bouton_modelisation = st.sidebar.button("Exécuter la modélisation")
-#if bouton_modelisation:
+if st.sidebar.button("Exécuter la modélisation"):
     #Appeler votre API Flask avec l'ID client sélectionné pour effectuer la modélisation
-    #url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients?SK_ID_CURR={selected_id}"
-    #response = requests.get(url)
-    #results = response.json()
+    url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients?SK_ID_CURR={selected_id}"
+    response = requests.get(url)
+    results = response.json()
 
     # Afficher les résultats de la modélisation
-    #resultat = results
-    #st.header(resultat)
-
+    st.session_state.message = results
 
 
 # Bouton pour afficher les infos de l'ID client sélectionné
