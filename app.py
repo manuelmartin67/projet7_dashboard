@@ -37,7 +37,7 @@ if st.sidebar.button("Exécuter la modélisation"):
     results = response.json()
 
     # Afficher les résultats de la modélisation
-    if results == "Acceptation" :
+    if results == "CREDIT ACCORDE" :
         st.session_state.message = ':green['+results+']'
     else :
         st.session_state.message = ':red['+results+']'
