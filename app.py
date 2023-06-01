@@ -29,8 +29,8 @@ if "message" not in st.session_state :
 #head = st.header(resultat)
 
 # Bouton pour exécuter la classification avec l'ID client sélectionné
-bouton_modelisation = st.sidebar.button("Exécuter la modélisation")
-if bouton_modelisation:
+#bouton_modelisation = st.sidebar.button("Exécuter la modélisation")
+if st.sidebar.button("Exécuter la modélisation"):
     #Appeler votre API Flask avec l'ID client sélectionné pour effectuer la modélisation
     url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients?SK_ID_CURR={selected_id}"
     response = requests.get(url)
@@ -68,7 +68,6 @@ nb_features = st.sidebar.slider("Nombre de features",min_value=1,max_value=21,va
 
 # Bouton pour le graphe d'importance locale
 if st.sidebar.button("Graphe d'importance locale"):
-    #bouton_modelisation = True
     # Appeler l'API Flask pour obtenir le graphe d'importance locale
     importance_local_url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients/importance_locale?SK_ID_CURR={selected_id}&feature={nb_features}"
     importance_local_response = requests.get(importance_local_url)
