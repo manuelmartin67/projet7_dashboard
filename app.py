@@ -68,7 +68,7 @@ nb_features = st.sidebar.slider("Nombre de features",min_value=1,max_value=21,va
 
 # Bouton pour le graphe d'importance locale
 if st.sidebar.button("Graphe d'importance locale"):
-    bouton_modelisation = True
+    #bouton_modelisation = True
     # Appeler l'API Flask pour obtenir le graphe d'importance locale
     importance_local_url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients/importance_locale?SK_ID_CURR={selected_id}&feature={nb_features}"
     importance_local_response = requests.get(importance_local_url)
