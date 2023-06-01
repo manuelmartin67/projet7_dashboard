@@ -30,7 +30,7 @@ if "message" not in st.session_state :
 
 # Bouton pour exécuter la classification avec l'ID client sélectionné
 bouton_modelisation = st.sidebar.button("Exécuter la modélisation")
-if bouton_modelisation("Exécuter la modélisation"):
+if bouton_modelisation:
     #Appeler votre API Flask avec l'ID client sélectionné pour effectuer la modélisation
     url = f"https://projet7-flask.herokuapp.com/api/v1/model/id_clients?SK_ID_CURR={selected_id}"
     response = requests.get(url)
